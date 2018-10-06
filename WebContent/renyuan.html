@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery1.12.2.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/date.css" />
+	</head>
+
+	<body>
+		<div class="container">
+		<script type="text/javascript" src="js/date.js"></script>
+		<h1>员工入职信息管理</h1>
+		<hr>
+	
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>请输入信息</h3></div>
+				<br>
+			<div class="container-fluid">
+				<form action="">
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*员工姓名</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*入职日期</h5>
+					</div>
+					<div class="col-md-2">
+						<input placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请选择日期" name="member.birth" type="text" value="" size="14" readonly onClick="showcalendar(event,this);"
+							onFocus="showcalendar(event, this);if(this.value=='0000-00-00')this.value=''" style="width: 270px; height: 35px;">
+					</div>
+				</div>
+				<br><br><br>
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*员工性别</h5></div>
+					<div class="col-md-2">
+			<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>男</option>
+                <option>女</option>
+</select>
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*参加工作日期</h5>
+					</div>
+					<div class="col-md-2">
+						<input placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请选择日期" name="member.birth" type="text" value="" size="14" readonly onClick="showcalendar(event,this);"
+							onFocus="showcalendar(event, this);if(this.value=='0000-00-00')this.value=''" style="width: 270px; height: 35px;">
+					</div>
+				</div>
+				<br><br><br>
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*员工编号</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*用工形式</h5>
+					</div>
+					<div class="col-md-2">
+					<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>正式员工</option>
+                <option>临时员工</option>
+</select>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*出生日期</h5></div>
+					<div class="col-md-2">
+						<input placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请选择日期" name="member.birth" type="text" value="" size="14" readonly onClick="showcalendar(event,this);"
+							onFocus="showcalendar(event, this);if(this.value=='0000-00-00')this.value=''" style="width: 270px; height: 35px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*人员来源</h5>
+					</div>
+					<div class="col-md-2">
+											<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>校园招聘</option>
+                <option>社会招聘</option>
+                <option>其他</option>
+</select>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*身份证号</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*部门</h5>
+					</div>
+					<div class="col-md-2">
+					<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>人事部</option>
+                <option>秘书部</option>
+</select>
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>血型</h5></div>
+					<div class="col-md-2">
+						<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>A型</option>
+                <option>B型</option>
+                <option>AB型</option>
+                <option>O型</option>
+                <option>其他血型</option>
+</select>
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>婚姻状况</h5>
+					</div>
+					<div class="col-md-2">
+					<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>未婚</option>
+                <option>已婚</option>
+                <option>丧偶</option>
+                <option>离婚</option>
+</select>
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>最高学历</h5></div>
+					<div class="col-md-2">
+						<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>高中及以下</option>
+                <option>大专</option>
+                <option>本科</option>
+                <option>研究生</option>
+</select>
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>最高学位</h5>
+					</div>
+					<div class="col-md-2">
+					<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>无学位</option>
+                <option>学士</option>
+                <option>双学士</option>
+                <option>硕士</option>
+                <option>博士</option>
+                <option>博士后</option>
+</select>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*出身地</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*户口所在地</h5>
+					</div>
+					<div class="col-md-2">
+					<input type="text" class="form-control" style="width: 270px;">
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>毕业院校</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*所选日期</h5>
+					</div>
+					<div class="col-md-2">
+					<input type="text" class="form-control" style="width: 270px;">
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>*联系电话</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>电子邮件</h5>
+					</div>
+					<div class="col-md-2">
+					<input type="text" class="form-control" style="width: 270px;">
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>政治面貌</h5></div>
+					<div class="col-md-2">
+						<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>党员</option>
+                <option>预备党员</option>
+                <option>团员</option>
+                <option>其他</option>
+</select>
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>民族</h5>
+					</div>
+					<div class="col-md-2">
+					<select class="form-control" style="width: 270px;">
+				<option>请选择</option> 
+				 <option>汉族</option>
+                 <option>少数民族</option>
+                <option>其他</option>            
+</select>
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>身高</h5></div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" style="width: 270px;">
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>毕业日期</h5>
+					</div>
+					<div class="col-md-2">
+					<input placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请选择日期" name="member.birth" type="text" value="" size="14" readonly onClick="showcalendar(event,this);"
+							onFocus="showcalendar(event, this);if(this.value=='0000-00-00')this.value=''" style="width: 270px; height: 35px;">
+					</div>
+				</div>
+				<br><br><br>
+					<div class="col-md-12">
+					<div class="col-md-2">
+						<h5>岗位信息</h5></div>
+					<div class="col-md-2">
+						<select class="form-control" style="width: 270px;">
+				 <option>请选择</option>
+                 <option>管理</option>
+                 <option>秘书</option>
+</select>
+					</div>
+					<div class="col-md-2 col-md-offset-2">
+						<h5>*是否试用</h5>
+					</div>
+					<div class="col-md-2">
+					<select class="form-control" style="width: 270px;">
+				<option>请选择</option> 
+				 <option>是</option>
+				 <option>否</option>
+                      
+</select>
+					</div>
+				</div>
+					<div class="col-md-12">
+					<div class="col-md-6"><h6><button class="btn btn-success form-control" >提交</button></h6></div>
+					<div class="col-md-6"><h6><button class="btn btn-danger form-control" type="reset" >重置</button></h6></div>
+				</div>
+				</form>
+			</div>
+		</div>
+		</div>
+		
+	</body>
+
+</html>

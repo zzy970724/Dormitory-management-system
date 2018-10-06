@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script type="text/javascript" src="../js/jquery1.12.2.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-modal.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="panel panel-heading">
+				<samp><h1>试用期管理</h1></samp>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<samp class="glyphicon glyphicon-search">&nbsp;试用期管理</samp>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">查询条件</div>
+				<div class="panel-body">
+					<div class="row"style="height: 30px;">
+						<div class="col-md-3">
+							姓名:
+						</div>
+						<div class="col-md-3">
+							编号:
+						</div>
+						<div class="col-md-3">
+							部门:
+						</div>
+						<div class="col-md-3">
+							岗位:
+						</div>
+					</div>
+					<div class="row" style="height: 50px;">
+						<div class="col-md-3">
+							<input type="text" class="form-control" placeholder="姓名">
+						</div>
+						<div class="col-md-3">
+							<input type="text" class="form-control" placeholder="姓名">
+						</div>
+						<div class="col-md-3">
+							<select class="form-control"> 
+							<option>请选择</option>
+							<option>A栋</option>
+							<option>B栋</option>
+							<option>C栋</option>
+						</select>
+						</div>
+						<div class="col-md-3">
+							<select class="form-control"> 
+							<option>请选择</option>
+							<option>学生管理</option>
+							<option>寝室技术</option>
+						</select>
+						</div>
+					</div>
+					<div class="row" style="height: 30px;">
+						<div class="col-md-3">
+							试用期开始时间:
+						</div>
+						<div class="col-md-3">
+							试用期结束时间:
+						</div>
+						<div class="col-md-3">
+							试用期状态:
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="btn-group">
+								<input type="date" class="form-control" id="datex" placeholder="日期" style="width: 207px; height: 35px;">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="btn-group">
+								<input type="date" class="form-control" id="datex" placeholder="日期" style="width: 207px; height: 35px;">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<select class="form-control"> 
+							<option>请选择</option>
+							<option>管理</option>
+							<option>技术</option>
+						</select>
+						</div>
+						<div class="col-md-3 ">
+							<a href="#">
+								<p><button class="btn btn-success" style="width: 205px; height: 34px;"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;查询</button></p>
+							</a>
+						</div>
+					</div>
+					
+						
+					
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">查询结果</h3>
+				</div>
+				<div class="panel-body">
+					
+						<button class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal"><samp class="glyphicon glyphicon-plus">&nbsp;&nbsp;转正</samp>
+						</button>
+						<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal2"><samp class="glyphicon glyphicon-refresh">&nbsp;&nbsp;延期</samp>
+						</button>
+						<button class="btn btn-danger btn-md" data-toggle="modal" data-target="#myModal3"><samp class="glyphicon glyphicon-remove">&nbsp;&nbsp;不通过</samp>
+						</button>
+						<br><br>
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered table-hover table-condensed">
+
+							<tr>
+								<td></td>
+								<td>姓名</td>
+								<td>编号</td>
+								<td>部门</td>
+								<td>岗位</td>
+								<td>试用期状态</td>
+								<td>试用期开始时间</td>
+								<td>试用期结束时间</td>
+							</tr>
+
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+							</tr>
+
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+							</tr>
+						</table>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel"><samp class="glyphicon glyphicon-exclamation-sign">&nbsp;操作提示</samp></h4>
+								</div>
+								<div class="modal-body">
+									是否确认转正?
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" data-dismiss="modal">确定</button>
+									<button type="button" class="btn btn-info" data-dismiss="modal">取消</button>
+								</div>
+							</div>
+							<!-- /.modal-content -->
+						</div>
+						<!-- /.modal-dialog -->
+					</div>
+					<!-- /.modal -->
+
+					<!-- Modal2 -->
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel">延期处理</h4>
+								</div>
+								<div class="modal-body">
+									<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-md-4 control-label">原试用期结束时间:</label>
+										<div class="col-md-6 col-md-offset-1">
+											<input type="email" class="form-control" id="inputEmail3" placeholder="2016/8/26">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-md-4 control-label">更改为:</label>
+										<div class="col-md-6 col-md-offset-1">
+											<div class="btn-group">
+								<input type="date" class="form-control" id="datex" placeholder="日期" style="width: 270px; height: 35px;">
+							</div>
+										</div>
+									</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" data-dismiss="modal">确定修改</button>
+									<button type="button" class="btn btn-info" data-dismiss="modal">取消</button>
+								</div>
+							</div>
+							<!-- /.modal-content -->
+						</div>
+						<!-- /.modal-dialog -->
+					</div>
+					<!-- /.modal -->
+
+					<!-- Modal3 -->
+					<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel"><samp class="glyphicon glyphicon-exclamation-sign">&nbsp;操作提示</samp></h4>
+								</div>
+								<div class="modal-body">
+										确定不通过!
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" data-dismiss="modal">确定</button>
+									<button type="button" class="btn btn-info" data-dismiss="modal">取消</button>
+								</div>
+							</div>
+							<!-- /.modal-content -->
+						</div>
+						<!-- /.modal-dialog -->
+					</div>
+					<!-- /.moda3 -->
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

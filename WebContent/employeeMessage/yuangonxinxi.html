@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>员工信息</title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script type="text/javascript" src="../js/jquery1.12.2.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-modal.js"></script>
+	</head>
+	<body>
+		<div style="width: 1080px; height: 615px;">
+				<ol class="breadcrumb">
+					<li>
+						<h2>员工信息</h2></li>
+				</ol>
+			<div class=" panel panel-default">
+				<div class="panel-heading">
+					<h5>职业生涯信息</h5>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-2">
+						起始年月
+						<input type="date" class="form-control" id="datex" placeholder="日期"">
+					</div>
+					<div class="col-md-2">
+						截止年月
+						<input type="date" class="form-control" id="datex" placeholder="日期"">
+					</div>
+					<div class="col-md-2">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" name="id" class="form-control" id="in1" placeholder="所在单位名称">
+					</div>
+					<div class="col-md-2">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="id" class="form-control" id="in1" placeholder="从事工作内容">
+					</div>
+					<div class="col-md-2">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="id" class="form-control" id="in1" placeholder="担任职务">
+					</div>
+					
+					<br><br><br><br>
+						<div class="col-md-2">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="年薪/月薪">
+					</div>
+					<div class="col-md-2">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="证明人">
+					</div>
+					<div class="col-md-2">
+					<input type="text" name="id" class="form-control" id="in1" placeholder="证明人职务">
+					</div>
+					<div class="col-md-2">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="证明人电话">
+					</div>
+					<div class="col-md-2">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="备注">
+					</div>
+					<div class="col-md-2">
+						
+					</div>
+				</div>
+
+			</div>
+				<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>外语能力</h4>
+				</div>
+				<div class="panel-body">
+						<div class="col-md-4">
+					<select class="form-control">
+						<option>英语</option>
+						<option>中文</option>
+						<option>日语</option>
+						<option>阿拉伯语</option>
+					</select>
+					</div>
+					<div class="col-md-4">
+					<select class="form-control">
+						<option>完全不懂</option>
+						<option>少量，不能进行业务沟通</option>
+						<option>有限的业务沟通</option>
+						<option>一般，业务沟通仍受少量限制</option>
+						<option>好， 无困难地进行谈判和讲演</option>
+						<option>流利，在商务中自如地运用</option>
+					</select>
+					</div>
+				</div>
+				</div>
+				
+				<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>家庭成员及社会关系信息</h4>
+				</div>
+				<div class="panel-body">
+						<div class="col-md-2">
+							父亲与本人关系
+					<select class="form-control">
+						<option>好</option>
+						<option>不好</option>
+						<option>不详</option>
+					</select>
+					</div>
+					<div class="col-md-2">
+							母亲与本人关系
+					<select class="form-control">
+						<option>好</option>
+						<option>不好</option>
+						<option>不详</option>
+					</select>
+					</div>
+					<div class="col-md-2">
+							配偶与本人关系
+					<select class="form-control">
+						<option>好</option>
+						<option>不好</option>
+						<option>不详</option>
+					</select>
+					</div>
+					<div class="col-md-2">
+						<div>父亲</div>
+					<input type="text" name="id" class="form-control" id="in1" placeholder="员工亲属姓名">
+					</div>
+					<div class="col-md-2">
+						<div>母亲</div>
+					<input type="text" name="id" class="form-control" id="in1" placeholder="员工亲属姓名">
+					</div>
+					<div class="col-md-2">
+						<div>配偶</div>
+					<input type="text" name="id" class="form-control" id="in1" placeholder="员工亲属姓名">
+					</div>
+					<br><br><br><br>
+						<div class="col-md-4">
+					<input type="text" name="id" class="form-control" id="in1" placeholder="该亲属所在单位">
+					</div>
+					<div class="col-md-4">
+					<input type="text" name="id" class="form-control" id="in1" placeholder="该亲属职位">
+					</div>
+					<div class="col-md-4">
+					<input type="text" name="id" class="form-control" id="in1" placeholder="家属联系电话">
+					</div>
+				</div>
+				</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="col-md-9">
+						
+		<!-- Button trigger modal -->
+		
+		<div class="col-md-2">
+		<button class="btn btn-success " data-toggle="modal" data-target="#myModal"><h6><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;添加</h6></button></div>
+			
+		
+		
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">操作提示</h4>
+					</div>
+					<div class="modal-body">
+						<h5>是否添加!</h5>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">确定添加</button>
+						<button type="button" class="btn btn-info" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+		</div>
+		</div>
+			</div>
+	</body>
+</html>

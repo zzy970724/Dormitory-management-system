@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>离职员工报表</title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+
+	</head>
+
+	<body>
+		<div style="width: 1080px; height: 615px;">
+			<ol class="breadcrumb">
+				<li>
+					<h2 style="font-family:">报表管理</h2></li>
+			</ol>
+
+			<div class=" panel panel-default">
+				<div class="panel-heading">
+					<h4>离职员工报表</h4>
+				</div>
+				<div class="panel-body">
+					<div class="btn-group col-md-3">
+						<div>开始日期</div>
+						<div class="btn-group">
+							<input type="date" class="form-control" id="datex" placeholder="日期" style="width: 215px; height: 35px;">
+						</div>
+					</div>
+
+					<div class="btn-group col-md-3">
+						<div>结束日期</div>
+						<input type="date" class="form-control" id="datex" placeholder="日期" style="width: 215px; height: 35px;">
+					</div>
+
+					<div class="col-md-3">
+						<div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+						<select id="in1" class="form-control"> 
+							<option>选择楼栋</option>
+							<option>A栋</option>
+							<option>B栋</option>
+							<option>C栋</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+						<button class="btn btn-success form-control"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;查询</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>查询结果</h4>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-3">
+
+					</div>
+				</div>
+			
+
+			<div class="panel-body">
+				<table class="table table-striped table-bordered table-hover table-condensed">
+					<tr class="active">
+						<td><b>编号</b></td>
+						<td><b>管理楼栋</b></td>
+						<td><b>寝室岗位</b></td>
+						<td><b>姓名</b></td>
+						<td><b>性别</b></td>
+						<td><b>离职日期</b></td>
+						<td><b>离职原因</b></td>
+					</tr>
+					<tr class="success">
+						
+						<td>01</td>
+						<td>A栋</td>
+						<td>水电管理</td>
+						<td>王先生</td>
+						<td>男</td>
+						<td>2017-07-05</td>
+						<td>脚跛了,回家休养</td>
+					</tr>
+					<tr class="warning">
+						
+						<td>02</td>
+						<td>B栋</td>
+						<td>生活委员</td>
+						<td>张先生</td>
+						<td>男</td>
+						<td>2017-08-05</td>
+						<td>身体不适</td>
+
+					</tr>
+					<tr class="success">
+						
+						<td>03</td>
+						<td>A栋</td>
+						<td>生活委员</td>
+						<td>李先生</td>
+						<td>男</td>
+						<td>2017-11-25</td>
+						<td>另寻工作</td>
+					</tr>
+					<tr class="warning">
+						
+						<td>04</td>
+						<td>C栋</td>
+						<td>网络管理</td>
+						<td>周先生</td>
+						<td>男</td>
+						<td>2017-05-17</td>
+						<td>薪资低</td>
+				</table>
+			</div>
+		</div>
+		</div>
+	</body>
+
+</html>

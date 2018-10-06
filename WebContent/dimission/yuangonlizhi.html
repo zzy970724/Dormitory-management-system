@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>员工离职管理</title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<script type="text/javascript" src="../js/jquery1.12.2.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-modal.js"></script>
+		<script>
+			function lz(){
+				alert("确定该员工离职");
+			var val=prompt("是否进入人才库",true);
+			alert(val);
+			}
+		</script>
+	</head>
+	<body>
+		<div style="width: 1080px; height: 615px;">
+				<ol class="breadcrumb">
+					<li>
+						<h2>员工离职管理</h2></li>
+				</ol>
+
+			<div class=" panel panel-default">
+				<div class="panel-heading">
+					<h4>确定员工离职</h4>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-3">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="员工所管理楼栋">
+					</div>
+					<div class="col-md-3">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="员工姓名">
+					</div>
+					<div class="col-md-3">
+						<select id="in1" class="form-control"> 
+							<option>离职类型</option>
+							<option>主动辞职</option>
+							<option>辞退</option>
+							<option>退休</option>
+							<option>开除</option>
+							<option>其他</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<a href=""><button class="btn btn-danger form-control" onclick="lz()"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;确定离职</button></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>已离职员工信息查询</h4>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-3">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="管理楼栋">
+					</div>
+					<div class="col-md-3">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="岗位名称">
+					</div>
+					<div class="col-md-3">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="员工编号">
+					</div>
+					<div class="col-md-3">
+						<input type="text" name="id" class="form-control" id="in1" placeholder="员工姓名">
+					</div>
+					<br><br>
+				<div class="col-md-3">
+						离职类型
+						<select class="form-control"> 
+							<option>主动辞职</option>
+							<option>辞退</option>
+							<option>退休</option>
+							<option>开除</option>
+							<option>其他</option>
+						</select>
+					</div>
+				<div class="col-md-3">
+					开始日期
+					<input type="date" class="form-control" id="datex" placeholder="日期" >
+				</div>
+					<div class="col-md-3">
+					结束日期
+					<input type="date" class="form-control" id="datex" placeholder="日期" >
+				</div>
+				<div class="col-md-3">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href=""><button class="btn btn-success form-control data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne""><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;查询</button></a>
+					</div>
+					 <div id="collapseOne" class="panel-collapse collapse">
+      					<div class="panel-body">
+      						<br><br><br>
+        				<table class="table table-striped table-bordered table-hover table-condensed">
+						<tr class="active">
+							<td></td>
+							<td><b>管理楼栋</b></td>
+							<td><b>岗位名称</b></td>
+							<td><b>员工编号</b></td>
+							<td><b>员工姓名</b></td>
+							<td><b>离职类型</b></td>
+							<td><b>开始日期</b></td>
+							<td><b>结束日期</b></td>
+						</tr>
+						<tr class="success">
+							<td><input type="checkbox"></td>
+							<td>A栋</td>
+							<td>水电管理</td>
+							<td>9521</td>
+							<td>张先生</td>
+							<td>开除</td>
+							<td>2009-03-05</td>
+							<td>2010-09-01</td>
+						
+						</tr>
+						<tr class="warning">
+							<td><input type="checkbox"></td>
+							<td>B栋</td>
+							<td>网络管理</td>
+							<td>9981</td>
+							<td>蒋先生</td>
+							<td>主动退休</td>
+							<td>2014-04-11</td>
+							<td>2015-12-18</td>
+					
+						</tr>
+						<tr class="success">
+							<td><input type="checkbox"></td>
+							<td>C栋</td>
+							<td>生活管理</td>
+							<td>9907</td>
+							<td>李先生</td>
+							<td>主动辞职</td>
+							<td>2015-09-06</td>
+							<td>2017-11-18</td>
+					</table>
+     		 </div>
+		</div>
+		</div>
+		</div>
+	</body>
+</html>
